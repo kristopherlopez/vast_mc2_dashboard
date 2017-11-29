@@ -1,0 +1,150 @@
+<!doctype html>
+<head>
+
+	<title>COMP5048 - Assignment 2</title>
+	
+  	<link rel="stylesheet" type="text/css" href="css/app.css" >
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/side.css" />
+	<link rel="stylesheet" type="text/css" href="css/page.css" />
+	<link rel="stylesheet" type="text/css" href="css/svg.css" />
+	<link rel="stylesheet" type="text/css" href="css/animations.css" />
+
+	<script src="/vendor/modernizr-custom.js"></script>
+	<script src="/vendor/d3.min.js"></script>
+	<script src="/vendor/jquery.min.js"></script>
+	<script src="TemplateData/UnityProgress.js"></script>
+<!-- 	<script src="Build/UnityLoader.js"></script>
+	<script>
+	  var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Gaia.json", {onProgress: UnityProgress});
+	</script> -->
+	
+</head>
+
+<body>
+<div class='side side-left'>
+	<div class='holder' id='holder-1'>
+		<div class='side-button sensor-button' id='sensor-1'><div class='button-text'>Sensor 1</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-1'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-2'>
+		<div class='side-button sensor-button' id='sensor-2'><div class='button-text'>Sensor 2</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-2'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-3'>
+		<div class='side-button sensor-button' id='sensor-3'><div class='button-text'>Sensor 3</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-3'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-4'>
+		<div class='side-button sensor-button' id='sensor-4'><div class='button-text'>Sensor 4</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-4'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-5'>
+		<div class='side-button sensor-button' id='sensor-5'><div class='button-text'>Sensor 5</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-5'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-6'>
+		<div class='side-button sensor-button' id='sensor-6'><div class='button-text'>Sensor 6</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-6'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-7'>
+		<div class='side-button sensor-button' id='sensor-7'><div class='button-text'>Sensor 7</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-7'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-8'>
+		<div class='side-button sensor-button' id='sensor-8'><div class='button-text'>Sensor 8</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-8'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-9'>
+		<div class='side-button sensor-button' id='sensor-9'><div class='button-text'>Sensor 9</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-9'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-agoc'>
+		<div class='side-button chem-button' id='agoc'><div class='button-text'>AGOC</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-agoc'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-appl'>
+		<div class='side-button chem-button' id='appl'><div class='button-text'>APPL</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-appl'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-chlo'>
+		<div class='side-button chem-button' id='chlo'><div class='button-text'>CHLO</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-chlo'><div class='circle-text'></div></div>
+	</div>
+	<div class='holder' id='holder-meth'>
+		<div class='side-button chem-button' id='meth'><div class='button-text'>METH</div></div>
+		<div class='white-space'></div>
+		<div class='performance-circle' id='sensor-meth'><div class='circle-text'></div></div>
+	</div>
+</div>
+<div class='side side-right'>
+	<div class='date-filter' id='april'>April</div>
+	<div class='date-filter' id='august'>August</div>
+	<div class='date-filter' id='december'>December</div>
+	<!-- <div class='time-filter'>Time</div> -->
+	<!-- <div class='wind-filter'></div> -->
+</div>
+<!-- <div class='footer'>
+	<div class='side-button date-button'><div class='button-text'>Apr</div></div>
+	<div class='side-button date-button'><div class='button-text'>Aug</div></div>
+	<div class='side-button date-button'><div class='button-text'>Dec</div></div>
+</div> -->
+<div class='main pt-main pt-perspective'>
+
+	<div class='pt-page pt-page-1'></div>
+<!-- 	<div class='pt-page pt-page-2'>
+		<div class='line-graph' id='eval-1'>
+			<img src="/media/area-chart.png" style="width:100%;height:263px;">
+		</div>
+		<div class='line-graph' id='eval-2'>
+			<img src="/media/area-chart.png" style="width:100%;height:263px;">
+		</div>
+		<div class='line-graph' id='eval-3'>
+			<img src="/media/area-chart.png" style="width:100%;height:263px;">
+		</div>
+		<div class='line-graph' id='eval-chem'>
+			<img src="/media/brush.png" style="width:100%;height:263px;">
+		</div>
+	</div> -->
+<!-- 	<div class='pt-page pt-page-3'>
+		<div class="webgl-content">
+		  <div id="gameContainer"></div>
+		  <div class="footer">
+			<div class="webgl-logo"></div>
+			<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+			<div class="title">VA Assignment 2</div>
+		  </div>
+		</div>
+	</div> -->
+<!-- 	<div class='pt-page pt-page-4'>Sensor readings animation
+		<div class='video'>
+			<video width="800" controls><source src="media/sensor_readings.mp4" type="video/mp4"></video>
+		</div>
+	</div> -->
+
+<!-- 	<div class='main-button left-button'><i class='left-arrow'></i><div>
+	<div class='main-button right-button'><i class='right-arrow'></i><div> -->
+</div>
+
+	<script src="/js/cards.js"></script>
+	<script src="/js/radarchart.js"></script>
+	<script src="/js/transitions.js"></script>
+	<script src="/js/button.js"></script>
+	<script src="/js/app.js"></script>
+	<script src="/js/calendar.js"></script>
+	
+	<!-- <script src="/js/stream.js"></script> -->
+
+</body>

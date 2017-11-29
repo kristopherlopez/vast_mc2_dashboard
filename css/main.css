@@ -1,0 +1,55 @@
+/* main page */
+
+.main {
+	text-align: center;
+	background-color: #fafafa;
+	width: 70%;
+}
+
+.main svg {
+	margin-left: 0px;
+	background-color: #fafafa;;
+}
+
+.main-button {
+	position: fixed;
+	background-color: transparent;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	border-radius: 5px;
+	z-index: 2000;
+}
+
+.right-button { right: 300px; }
+
+.left-button { left: 220px; }
+
+i {
+    border: solid black;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 20px;
+    z-index: 300;
+}
+
+.right-arrow {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left-arrow {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	margin-bottom: 10px;
+	height: 80px;
+	background-color: #fafafa;
+	z-index: 400;
+	width: 100% - 300px;
+}

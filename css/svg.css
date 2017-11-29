@@ -1,0 +1,21 @@
+/* SVG Elements */
+
+// .circText {
+// 	font-size: 14px;
+// }
+
+circle.sensor {
+	// r: 10;
+	fill: white;
+	stroke-width: 1px;
+}
+
+circle.factory{
+	// r: 5;
+	fill: black;
+}
+
+.b-circles circle {
+	// r: 125;
+	fill: white;
+}

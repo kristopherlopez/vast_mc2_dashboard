@@ -1,0 +1,134 @@
+/* side panels */
+
+.side {
+	position: fixed;
+	width: 12%;
+	height: 100%;
+	background-color: #FAFAFA;
+	z-index: 2;
+}
+
+.holder {
+	margin: 3.25% 0px 0.87% 1.75%;
+	width: 100%;
+	height: 5.25%;
+}
+
+.side-left { left: 0px; }
+
+.side-right { right: 0px; }
+
+.side-button {
+	display: table;
+	width: 60%;
+	float: left;
+	border-radius: 18px;
+	height: 100%;
+	text-align: center;
+	// font-size: 18px;
+}
+
+.sensor-button {
+	background-color: #292929;
+	border-color: #292929;
+	border-width: 2px;
+	border-style: solid;
+	color: #ffffff;
+}
+
+.white-space {
+	width: 4%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+
+.performance-circle {
+	display: table;
+	background-color: #FFFFFF;
+	text-align: center;
+	color: #292929;
+	font-size: 20px;
+	border-color: #C4C4C4;
+	border-radius: 48px;
+	border-width: 2px;
+	border-style: solid;
+	width: 30%;
+	height: 97%;
+	overflow: hidden;	
+}
+
+.circle-text {
+	display: table-cell;
+	vertical-align: middle;
+    font-family: sans-serif;
+}
+
+#holder-1 { margin-top: 20%; }
+
+// .side-button#sensor-1 { margin-top: 20%; }
+
+#holder-agoc { margin-top: 30%; }
+
+// .side-button#agoc { margin-top: 30%; }
+
+.date-button {
+	float: left;
+	background-color: #292929;
+	color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-right: 0px;
+	width: 100px;
+	border-radius: 20px;
+}
+
+.button-text {
+	display: table-cell;
+	vertical-align: middle;
+    font-family: sans-serif;
+}
+
+.wind-filter {
+	background-color: #8DCDC1;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 250px;
+	height: 250px;
+}
+
+.date-filter {
+	// background-color: #8333C1;
+	margin-left: 5%;
+	margin-top: 15%;
+	width: 80%;
+	height: 20%;
+	// font-size: 30px;
+	text-align: center;
+}
+
+.time-filter {
+	background-color: #811111;
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 250px;
+	height: 100px;	
+}
+
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: 28px;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: #000000;
+    color: #FFFFFF;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;
+    z-index: 9999;		
+}
+
+#performance-1 { margin-top: 20%; }

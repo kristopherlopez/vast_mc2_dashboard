@@ -1,0 +1,30 @@
+html, body { height: 100%; }
+
+html { background-color: #fafafa; }
+
+body { background-color: #fafafa; }
+
+/* chemical colours */
+
+.grey { background-color: #DBDBDB !important; fill: #DBDBDB !important; }
+
+#appl.clicked { background-color: #FFFFFF; color: #2980B9; border-color: #424242; border-style: solid; border-width: 2px;}
+
+#chlo.clicked { background-color: #FFFFFF; color: #9BBB59; border-color: #424242; border-style: solid; border-width: 2px;}
+
+#meth.clicked { background-color: #FFFFFF; color: #F39C12; border-color: #424242; border-style: solid; border-width: 2px;}
+
+#agoc.clicked { background-color: #FFFFFF; color: #C0392B; border-color: #424242; border-style: solid; border-width: 2px;}
+
+.sensor-button.clicked { background-color: #FFFFFF; color: #424242; border-color: #424242; border-style: solid; border-width: 2px;}
+
+.date-button.clicked { background-color: #FFFFFF; color: #424242; border-color: #424242; border-style: solid; border-width: 2px;}
+
+div#appl, .appl { background-color: #2980B9; fill: #2980B9; }
+
+div#chlo, .chlo { background-color: #9BBB59; fill: #9BBB59; }
+
+div#meth, .meth { background-color: #F39C12; fill: #F39C12; }
+
+div#agoc, .agoc { background-color: #C0392B; fill: #C0392B; }
+
