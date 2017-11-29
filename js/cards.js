@@ -34,11 +34,6 @@ $(document).ready(function () {
 			$('.performance-circle#sensor-' + fc_data[f].key + ' .circle-text').text(percentage)
 		}
 
-			console.log(c_data)
-			console.log(fc_data)
-
-		// console.log(Object.keys(d_data).length)
-
 	})
 
 })

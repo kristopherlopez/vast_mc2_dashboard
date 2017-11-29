@@ -17,9 +17,6 @@ $(document).ready(function () {
     .attr("class", 'svg-page-1')
     .attr("width", max_width)
     .attr("height", max_height)
-    // .call(d3.zoom().on("zoom", function () {
-    //     svg.attr("transform", d3.event.transform)
-    //   }))
     .append("g")
     .attr("class", 'g-page-1')
 
@@ -139,23 +136,5 @@ $(document).ready(function () {
       })
 
   });
-
-    // // Colour scales for contour plot
-    // var i0 = d3.interpolateHsvLong(d3.hsv(120, 1, 0.65), d3.hsv(60, 1, 0.90)),
-    //     i1 = d3.interpolateHsvLong(d3.hsv(60, 1, 0.90), d3.hsv(0, 0, 0.95)),
-    //     interpolateTerrain = function(t) { return t < 0.5 ? i0(t * 2) : i1((t - 0.5) * 2); },
-    //     color = d3.scaleSequential(interpolateTerrain).domain([90, 190]);
-
-    // load in Location data
-
-    // // D3 block for contour
-    // svg.selectAll("path")
-    //   .data(d3.contours()
-    //       .size([volcano.width, volcano.height])
-    //       .thresholds(d3.range(90, 195, 5))
-    //     (volcano.values))
-    //   .enter().append("path")
-    //     .attr("d", d3.geoPath(d3.geoIdentity().scale(width / volcano.width)))
-    //     .attr("fill", function(d) { return color(d.value); });
 
 });

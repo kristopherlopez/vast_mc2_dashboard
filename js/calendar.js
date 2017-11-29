@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
 	d3.csv('/data/data.csv', function(data){
-		// console.log(data[0])
 
 		var w = $(window).width() * 0.125,
 			h = $(window).width() * 0.125
