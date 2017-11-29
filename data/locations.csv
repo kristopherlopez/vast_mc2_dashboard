@@ -1,0 +1,14 @@
+id,type,name,east_gu,north_gu,east_km,north_km
+f1,factory,Roadrunner Fitness Electronics,89,27,8.59206,2.60658
+f2,factory,Kasios Office Furniture,90,21,8.6886,2.02734
+f3,factory,Radiance ColourTek,109,26,10.52286,2.51004
+f4,factory,Indigo Sol Boards,120,22,11.5848,2.12388
+s1,sensor,1,62,21,5.98548,2.02734
+s2,sensor,2,66,35,6.37164,3.3789
+s3,sensor,3,76,41,7.33704,3.95814
+s4,sensor,4,88,45,8.49552,4.3443
+s5,sensor,5,103,43,9.94362,4.15122
+s6,sensor,6,102,22,9.84708,2.12388
+s7,sensor,7,89,3,8.59206,0.28962
+s8,sensor,8,74,7,7.14396,0.67578
+s9,sensor,9,119,42,11.48826,4.05468
