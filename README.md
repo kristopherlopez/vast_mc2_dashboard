@@ -1,4 +1,4 @@
-# vast_mc2_dashboard
+# Vast MC2 Dashboard
 
 http://www.vacommunity.org/VAST+Challenge+2017+MC2
 
@@ -11,6 +11,7 @@ The dashboard predicts which factories have emitted which pollutants. Features o
 5) Degree / angle of data point represents where the wind was blowing from
 6) Data points are coloured by chemical to better spot trends
 7) Calendar heatmaps enable user to identify trends and interrogate summarised data
+8) Data cards appear as the user interacts to provide detail about highlighted data
 
 Inspired by:
 
